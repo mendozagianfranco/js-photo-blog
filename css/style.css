@@ -51,8 +51,12 @@ main {
     padding: 20px;
     width: calc((100% - 40px) / 3);
     position: relative;
+    max-width: max-content;
 }
-
+.card-top {
+    max-width: 600px;
+    max-height: 600px;
+}
 .card-top img {
     object-fit: cover;
 }
