@@ -53,6 +53,7 @@ main {
     width: calc((100% - 40px) / 3);
     position: relative;
     max-width: max-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card-top {
