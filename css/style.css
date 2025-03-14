@@ -14,7 +14,12 @@ img {
     height: 100%;
     display: block;
 }
-
+/* COMMON */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 /* HEADER */
 header {
     background-image: url(../img/wall.png);
