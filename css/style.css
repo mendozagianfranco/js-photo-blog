@@ -24,7 +24,7 @@ header {
     font-family: 'Edu TAS Beginner', cursive;
     font-optical-sizing: auto;
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
     padding: 35px 0;
 }
 
@@ -78,4 +78,18 @@ main {
     font-optical-sizing: auto;
     margin-top: 20px;
     max-width: 600px;
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
 }
