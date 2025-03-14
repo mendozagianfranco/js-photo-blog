@@ -4,3 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+.title {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-optical-sizing: auto;
+    text-align: center;
+}
