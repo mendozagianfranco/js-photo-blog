@@ -6,8 +6,14 @@
 }
 
 /* HEADER */
+header {
+    background-image: url(../img/wall.png);
+}
+
 .title {
     font-family: 'Edu TAS Beginner', cursive;
     font-optical-sizing: auto;
     text-align: center;
+    font-size: 70px;
+    padding: 35px 0;
 }
