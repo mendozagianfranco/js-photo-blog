@@ -1,4 +1,7 @@
 const gridElement = document.getElementById('grid');
+const overlayElement = document.querySelector('.overlay');
+const btnOverlayElement = document.querySelector('.btn-overlay');
+
 
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
@@ -6,13 +9,13 @@ axios.get(endpoint)
     .then(response => {
         const data = response.data;
         renderHTML(gridElement, data);
+        activedOverlay();
+        closedOverlay();
     });
 
 
 function renderHTML(parent, elements) {
     let item = '';
-
-
     for (let i = 0; i < elements.length; i++) {
         let currentPhoto = elements[i];
         item += makeStructureCardHTML(currentPhoto);
@@ -35,4 +38,22 @@ function makeStructureCardHTML(photo) {
                     </h2>
                 </div>
             </div>`;
+}
+
+
+
+function activedOverlay() {
+    const cardElements = document.querySelectorAll('.card');
+    for (let i = 0; i < cardElements.length; i++) {
+        let currentCard = cardElements[i];
+        currentCard.addEventListener('click', function () {
+            overlayElement.classList.remove('d-none');
+        });
+    }
+}
+
+function closedOverlay() {
+    btnOverlayElement.addEventListener('click', function () {
+        overlayElement.classList.add('d-none');
+    });
 }
