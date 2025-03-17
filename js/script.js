@@ -2,7 +2,7 @@ const gridElement = document.getElementById('grid');
 const overlayElement = document.querySelector('.overlay');
 const btnOverlayElement = document.querySelector('.btn-overlay');
 const imgOverlayElement = document.querySelector('.img-overlay');
-
+const bodyElement = document.body;
 
 
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
@@ -50,6 +50,7 @@ function activedOverlay() {
         let currentCard = cardElements[i];
         currentCard.addEventListener('click', function () {
             overlayElement.classList.remove('d-none');
+            bodyElement.classList.add('no-scroll');
             const imgElementAlbum = currentCard.querySelector('.photo-album');
             imgOverlayElement.src = imgElementAlbum.src;
             imgOverlayElement.alt = imgElementAlbum.alt;
@@ -60,5 +61,6 @@ function activedOverlay() {
 function closedOverlay() {
     btnOverlayElement.addEventListener('click', function () {
         overlayElement.classList.add('d-none');
+        bodyElement.classList.remove('no-scroll');
     });
 }

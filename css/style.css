@@ -124,6 +124,10 @@ main {
     display: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .btn-overlay {
     margin-bottom: 30px;
     padding: 5px;
