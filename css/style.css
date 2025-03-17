@@ -37,13 +37,13 @@ header {
 
 main {
     background-image: url(../img/cork.png);
+    flex-grow: 1;
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 90px 0;
 }
 
 #grid {
