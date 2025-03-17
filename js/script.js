@@ -29,9 +29,10 @@ function makeStructureCardHTML(photo) {
                         alt=${photo.title} />
                 </div>
                 <div class="card-bottom">
-                    <p class="card-info">
+                <p class="card-date">${photo.date}</p>
+                    <h2 class="card-info">
                     ${photo.title}
-                    </p>
+                    </h2>
                 </div>
             </div>`;
 }
